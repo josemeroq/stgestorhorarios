@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  background-image: url(/Imagenes/imgc01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  display: block;
+  background-color: #e03030;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #9e0606;
+}
+
+.error {
+  color: #ff2e63;
+  margin-top: 5px;
+}
+
+a {
+  color: #e03030;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.registro-completado {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+}

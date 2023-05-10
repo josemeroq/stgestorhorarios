@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gestión de Horarios</title>
+	<link rel="stylesheet" type="text/css" href="Estilos/estilos.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1>Gestión de Horarios de la ULEAM</h1>
+		<form id="formulario">
+			<label for="carrera">Carrera:</label>
+			<select id="carrera" name="carrera">
+				<option value="" disabled selected>Seleccione una carrera</option>
+				<option value="Medicina">Medicina</option>
+				<option value="Enfermeria">Enfermería</option>
+				<option value="Contabilidad">Contabilidad y Auditoría</option>
+				<option value="Mercadotecnia">Mercadotecnia</option>
+				<option value="Turismo">Turismo</option>
+				<option value="Sociologia">Sociología</option>
+				<option value="Ing.Civil">Ingenería Civil</option>
+				<option value="Ing.Maritima">Ingenería Marítima</option>
+				<option value="Arquitectura">Arquitectura</option>
+				<option value="TICs">Ingenería en Tecnologías de la información</option>
+				<option value="Ing.Software">Ingenería en Software</option>
+				<option value="Ing.Sistema">Ingenería en Sistema</option>
+				<option value="Biologia">Biología</option>
+			</select>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+			<label for="nivel">Nivel:</label>
+			<input type="text" id="nivel" name="nivel" placeholder="Ingrese el nivel o semestre">
+			<label for="aula">Aula:</label>
+			<input type="text" id="aula" name="aula" placeholder="Ingrese el aula">
+			<label for="dia">Día:</label>
+			<select id="dia" name="dia">
+				<option value="" disabled selected>Seleccione un día</option>
+				<option value="Lunes">Lunes</option>
+				<option value="Martes">Martes</option>
+				<option value="Miercoles">Miércoles</option>
+				<option value="Jueves">Jueves</option>
+				<option value="Viernes">Viernes</option>
+			</select>
+			<label for="horaini">Hora Inicio:</label>
+			<input type="time" id="horaini" name="horaini">
+            <label for="horafin">Hora Fin:</label>
+			<input type="time" id="horafin" name="horafin">
+			<button type="submit"><b>Agregar Horario</b></button>
+		</form>
+		<div id="mensaje-exito" style="display: none;">Horario agregado exitosamente!.</div>
+        </div>
+		<table id="tabla-horarios">
+			<thead>
+				<tr>
+					<th>Carrera</th>
+      				<th>Nombres</th>
+      				<th>Nivel</th>
+                    <th>Aula</th>
+					<th>Día</th>
+      				<th>Hora Ini.</th>
+                    <th>Hora Fin.</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Medicina</td>
+					<td>Matheo Garcia</td>
+                    <td>Primer Nivel "A" </td>
+                    <td>Aula 156</td>
+                    <td>Lunes</td>
+                    <td>9:00</td>
+                    <td>11:00</td>
+                </tr>
+            </tbody>
+		</table>
+    <script src="js/script.js"></script>
+</body>
+</html>
